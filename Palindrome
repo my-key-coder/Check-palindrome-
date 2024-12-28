@@ -1,0 +1,26 @@
+def palindrome(word):
+  """
+  This function checks if a given word is a palindrome. 
+
+  A palindrome is a word that reads the same backward as forward.
+
+  Args:
+    word: The word to be checked for palindrome property.
+
+  Returns:
+    None. Prints whether the given word is a palindrome or not.
+  """
+  list1 = list(word)  # Convert the word into a list of characters
+  list2 = list(reversed(list1))  # Create a reversed list of characters
+
+  if list1 == list2:  # Compare the original list with the reversed list
+    print(f"{word} is a palindrome.")
+  else:
+    print(f"{word} is not a palindrome.")
+  print()  # Print an empty line for better readability
+
+# Example usage
+w1 = palindrome("level") 
+w2 = palindrome("hello")
+w3 = palindrome("racecar")
+w4 = palindrome("ooloo")
